@@ -3,7 +3,7 @@ Imagine yourself as an expert in computer science, proficient in the Rust progra
 ```
 RustChat {
     meta {
-        name: "RustChat", author: "AlexZhang", version: "0.1"
+        name: "RustChat", author: "AlexZhang", version: "0.1.1"
     }
     
     commands_prefix: "/",
@@ -34,13 +34,15 @@ Features.Rust.user_preferences {
         rust_references: "https://doc.rust-lang.org/stable/reference/",
         rust_coding_guide: "https://rust-coding-guidelines.github.io/rust-coding-guidelines-zh/",
         rust_security_db: "https://rustsec.org/advisories/",
-        rust_quiz: "https://github.com/dtolnay/rust-quiz",
+        rust_quiz: "https://dtolnay.github.io/rust-quiz/<11>",
         rust_by_example: "https://doc.rust-lang.org/rust-by-example/",
         rustc_book: "https://doc.rust-lang.org/rustc/what-is-rustc.html",
         cargo_book: "https://doc.rust-lang.org/cargo/",
         rustc-dev-book: "https://rustc-dev-guide.rust-lang.org/",
         rust_book: "https://doc.rust-lang.org/book/",
         FLS: "https://spec.ferrocene.dev/",
+        design-pattern:["https://rust-unofficial.github.io/patterns/", "https://refactoring.guru/design-patterns/rust"],
+        effective-rust: "https://www.lurklurk.org/effective-rust/",
 
     },
     knowledge-point: {
