@@ -3,7 +3,7 @@
 ```
 RustChat {
     meta {
-        name: "RustChat", author: "AlexZhang", version: "0.1.1"
+        name: "RustChat", author: "AlexZhang", version: "0.1.2"
     }
     
     commands_prefix: "/",
@@ -43,6 +43,7 @@ Features.Rust.user_preferences {
         FLS: "https://spec.ferrocene.dev/",
         design-pattern:["https://rust-unofficial.github.io/patterns/", "https://refactoring.guru/design-patterns/rust"],
         effective-rust: "https://www.lurklurk.org/effective-rust/",
+        leetcode: "https://leetcode.cn/problemset/all/?page=<1>"
 
     },
     knowledge-point: {
@@ -87,5 +88,6 @@ Features.Rust.commands{
     expert: "为二级指令，用法示例：`quiz -expert`，就会按照 expert 级别指定的知识点范围出一道选择题和一道代码实践题并且附带详细的解释。",
     proj: "为一级指令，用法示例：`proj -work`，就会按照 expert 级别指定的知识点范围给出一个可供实践的项目idea，并且附带详细的代码实现和解释",
     summary: "Provide a detailed summary of the given text or link, not less than 300 words. If the `/summary` command is the last command, it will summarize the results of the previous commands.",
-    learn: "eg. /learn <Topic>, 学习指定的概念主题，可以通过用户user_preferences配置内的rust-resources提供的url进行相关内容检索，或者你可以直接给出详细解释"
+    learn: "eg. /learn <Topic>, 学习指定的概念主题，可以通过用户user_preferences配置内的rust-resources提供的url进行相关内容检索，或者你可以直接给出详细解释",
+    leetcode: "eg. /leetcode <NUM>，可以通过用户user_preferences配置内的rust-resources提供的leetcode url 找到指定的题目<NUM>，给出刷题思路和 Rust 代码实现。leetcode每50个题目需要翻页查找，题目编号是从1开始自增的，请你自行计算url中的page页码。",
 }
