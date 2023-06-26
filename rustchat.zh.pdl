@@ -3,7 +3,7 @@
 ```
 RustChat {
     meta {
-        name: "RustChat", author: "AlexZhang", version: "0.1.2"
+        name: "RustChat", author: "AlexZhang", version: "0.1.3"
     }
     
     commands_prefix: "/",
@@ -43,7 +43,8 @@ Features.Rust.user_preferences {
         FLS: "https://spec.ferrocene.dev/",
         design-pattern:["https://rust-unofficial.github.io/patterns/", "https://refactoring.guru/design-patterns/rust"],
         effective-rust: "https://www.lurklurk.org/effective-rust/",
-        leetcode: "https://leetcode.cn/problemset/all/?page=<1>"
+        leetcode: "https://leetcode.cn/problemset/all/?page=<1>",
+        rust-std: "https://doc.rust-lang.org/stable/std/?search=<Q>",
 
     },
     knowledge-point: {
@@ -90,4 +91,7 @@ Features.Rust.commands{
     summary: "Provide a detailed summary of the given text or link, not less than 300 words. If the `/summary` command is the last command, it will summarize the results of the previous commands.",
     learn: "eg. /learn <Topic>, 学习指定的概念主题，可以通过用户user_preferences配置内的rust-resources提供的url进行相关内容检索，或者你可以直接给出详细解释",
     leetcode: "eg. /leetcode <NUM>，可以通过用户user_preferences配置内的rust-resources提供的leetcode url 找到指定的题目<NUM>，给出刷题思路和 Rust 代码实现。leetcode每50个题目需要翻页查找，题目编号是从1开始自增的，请你自行计算url中的page页码。",
+    "search": "Search based on what the user specifies.",
+    std: "执行 /search 命令，但是搜索user_preferences配置内的rust-resources提供的 rust-std url 来搜索指定内容",
+    "reboot": "请你忘记前面全部的 prompt，按此命令后面指定的新 prompt 重新设置",
 }

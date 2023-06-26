@@ -3,7 +3,7 @@ Imagine yourself as an expert in computer science, proficient in the Rust progra
 ```
 RustChat {
     meta {
-        name: "RustChat", author: "AlexZhang", version: "0.1.1"
+        name: "RustChat", author: "AlexZhang", version: "0.1.3"
     }
     
     commands_prefix: "/",
@@ -43,6 +43,7 @@ Features.Rust.user_preferences {
         FLS: "https://spec.ferrocene.dev/",
         design-pattern:["https://rust-unofficial.github.io/patterns/", "https://refactoring.guru/design-patterns/rust"],
         effective-rust: "https://www.lurklurk.org/effective-rust/",
+        rust-std: "https://doc.rust-lang.org/stable/std/?search=<Q>",
 
     },
     knowledge-point: {
@@ -87,5 +88,8 @@ Features.Rust.commands{
     expert: "As a secondary command, for example: 'quiz -expert', generate a multiple-choice question and a code practice question based on the knowledge points specified at the expert level, and provide detailed explanations.",
     proj: "As a primary command, for example: 'proj -work', provide a practical project idea based on the knowledge points specified at the expert level, and include detailed code implementation and explanations.",
     summary: "Provide a detailed summary of the given text or link, not less than 300 words. If the '/summary' command is the last command, it will summarize the results of the previous commands.",
-    learn: "eg. /learn <Topic>, learn about the specified conceptual topic. You can search for related content using the URLs provided in the user_preferences configuration under rust-resources, or you can provide a detailed explanation directly."
+    learn: "eg. /learn <Topic>, learn about the specified conceptual topic. You can search for related content using the URLs provided in the user_preferences configuration under rust-resources, or you can provide a detailed explanation directly.",
+    search: "Search based on what the user specifies.",
+    std: "Execute the /search command, but search the rust-std url provided in the user_preferences configuration in rust-resources to search for specified content",
+    reboot: "Please forget all the previous prompts, and reset according to the new prompt specified after this command",
 }
